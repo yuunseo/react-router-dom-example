@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter,Route,Routes} from "react-router-dom";
+import {BrowserRouter,Route,Routes,Link} from "react-router-dom";
 
 function NotFound(){
   return(
@@ -42,9 +42,9 @@ function App(){
   return(
     <div>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/topics">Topics</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/topics">Topics</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
       <h1>React Router DOM example</h1>
       <Routes>
